@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>P4d4r1a - CRUD</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet"  type="text/css" href="css\style.css" />
+    </head>
+    <body>
+        <div class="content">
+            <nav>
+                <ul class="menu">
+                    <li class="active">
+                        <svg width="30" height="30" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#444" d="M12 6v-6h-8v6h-4v7h16v-7h-4zM7 12h-6v-5h2v1h2v-1h2v5zM5 6v-5h2v1h2v-1h2v5h-6zM15 12h-6v-5h2v1h2v-1h2v5z"></path> <path fill="#444" d="M0 16h3v-1h10v1h3v-2h-16v2z"></path> </g></svg>
+                    </li>
+                    <li>
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 8.99998C10.5523 8.99998 11 9.44769 11 9.99998C11 10.5523 10.5523 11 10 11C9.44775 11 9.00004 10.5523 9.00004 9.99998C9.00004 9.44769 9.44775 8.99998 10 8.99998Z" fill="#000000"></path> <path d="M13 14C13 14.5523 13.4478 15 14 15C14.5523 15 15 14.5523 15 14C15 13.4477 14.5523 13 14 13C13.4478 13 13 13.4477 13 14Z" fill="#000000"></path> <path d="M10.7071 14.7071L14.7071 10.7071C15.0977 10.3166 15.0977 9.6834 14.7071 9.29287C14.3166 8.90235 13.6835 8.90235 13.2929 9.29287L9.29293 13.2929C8.90241 13.6834 8.90241 14.3166 9.29293 14.7071C9.68346 15.0976 10.3166 15.0976 10.7071 14.7071Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3117 4.07145L15.1708 4.34503L14.5575 3.34485C13.3869 1.43575 10.6131 1.43575 9.44254 3.34485L8.82926 4.34503L7.68836 4.07145C5.51069 3.54925 3.54931 5.51063 4.07151 7.6883L4.34509 8.8292L3.34491 9.44248C1.43581 10.6131 1.43581 13.3869 3.34491 14.5575L4.34509 15.1708L4.07151 16.3117C3.54931 18.4893 5.51069 20.4507 7.68836 19.9285L8.82926 19.6549L9.44254 20.6551C10.6131 22.5642 13.3869 22.5642 14.5575 20.6551L15.1708 19.6549L16.3117 19.9285C18.4894 20.4507 20.4508 18.4893 19.9286 16.3117L19.655 15.1708L20.6552 14.5575C22.5643 13.3869 22.5643 10.6131 20.6552 9.44248L19.655 8.8292L19.9286 7.6883C20.4508 5.51063 18.4894 3.54925 16.3117 4.07145ZM11.1475 4.3903C11.5377 3.75393 12.4623 3.75393 12.8525 4.3903L13.8454 6.00951C14.0717 6.37867 14.51 6.56019 14.9311 6.45922L16.7781 6.01631C17.504 5.84225 18.1578 6.49604 17.9837 7.22193L17.5408 9.06894C17.4398 9.49003 17.6213 9.92827 17.9905 10.1546L19.6097 11.1475C20.2461 11.5377 20.2461 12.4623 19.6097 12.8525L17.9905 13.8453C17.6213 14.0717 17.4398 14.5099 17.5408 14.931L17.9837 16.778C18.1578 17.5039 17.504 18.1577 16.7781 17.9836L14.9311 17.5407C14.51 17.4398 14.0717 17.6213 13.8454 17.9904L12.8525 19.6097C12.4623 20.246 11.5377 20.246 11.1475 19.6097L10.1547 17.9904C9.92833 17.6213 9.49009 17.4398 9.069 17.5407L7.22199 17.9836C6.4961 18.1577 5.84231 17.5039 6.01637 16.778L6.45928 14.931C6.56026 14.5099 6.37873 14.0717 6.00957 13.8453L4.39036 12.8525C3.75399 12.4623 3.75399 11.5377 4.39036 11.1475L6.00957 10.1546C6.37873 9.92827 6.56026 9.49003 6.45928 9.06894L6.01637 7.22193C5.84231 6.49604 6.4961 5.84225 7.22199 6.01631L9.069 6.45922C9.49009 6.56019 9.92833 6.37867 10.1547 6.00951L11.1475 4.3903Z" fill="#000000"></path> </g></svg>
+                    </li>
+                    <li class="add_form">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M23 18C23 18.75 22.79 19.46 22.42 20.06C22.21 20.42 21.94 20.74 21.63 21C20.93 21.63 20.01 22 19 22C17.78 22 16.69 21.45 15.97 20.59C15.95 20.56 15.92 20.54 15.9 20.51C15.78 20.37 15.67 20.22 15.58 20.06C15.21 19.46 15 18.75 15 18C15 16.74 15.58 15.61 16.5 14.88C17.19 14.33 18.06 14 19 14C20 14 20.9 14.36 21.6 14.97C21.72 15.06 21.83 15.17 21.93 15.28C22.59 16 23 16.95 23 18Z" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20.49 17.98H17.51" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M19 16.52V19.51" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3.17004 7.43994L12 12.5499L20.7701 7.46991" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 21.6099V12.5399" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21.61 9.17V14.83C21.61 14.88 21.61 14.92 21.6 14.97C20.9 14.36 20 14 19 14C18.06 14 17.19 14.33 16.5 14.88C15.58 15.61 15 16.74 15 18C15 18.75 15.21 19.46 15.58 20.06C15.67 20.22 15.78 20.37 15.9 20.51L14.07 21.52C12.93 22.16 11.07 22.16 9.93001 21.52L4.59001 18.56C3.38001 17.89 2.39001 16.21 2.39001 14.83V9.17C2.39001 7.79 3.38001 6.11002 4.59001 5.44002L9.93001 2.48C11.07 1.84 12.93 1.84 14.07 2.48L19.41 5.44002C20.62 6.11002 21.61 7.79 21.61 9.17Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="forms">
+                 <div class="upload-form">
+                    <form action="/upload" method="post" class="register-product">
+    
+                        <label for="product" class="product_label">Product Name:</label>
+                        <input type="text" name="product" id="product__input" required/>
+    
+    
+                        <div class="image-group">
+                            <div class="upload-image">
+                                <label class="picture" for="picture" tabindex="0">
+                                    <span class="picture__image"></span>
+                                </label>
+                                
+                                <label for="picture" class="custom-file-upload">
+                                    Upload Image
+                                    <input type="file" name="picture" id="picture__input"/>
+                                </label>
+                            </div>
+    
+                            <div class="input-group">
+                                <label for="amount">Amount :</label>
+                                <input type="number" name="amount" id="amount__input" required/>
+            
+                                <label for="unitPrice">Unit price : </label>
+                                <input type="number" name="unitPrice" id="unitPrice__input" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" required/>
+    
+                                <label for="group">Product Group: </label>
+                                <select name="group" id="select-input" required>
+                                    <optgroup label="Bread">
+                                        <option value="Pão branco">Pão branco</option>
+                                        <option value="Pão de forma">Pão de forma</option>
+                                        <option value="Baguette">Baguette</option>
+                                        <option value="Pão Preto">Pão Preto</option>
+                                        <option value="Pão de centeio">Pão de centeio</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <label for="characteristics" class="characteristics-input">Product Characteristics : </label>
+                        <textarea name="characteristics" id="characteristics__input" cols="42" rows="10" required></textarea>
+    
+                        <button type="submit">Submit</button>
+                    </form>
+                
+    
+                <div class="update-form">
+                    <form action="/edit" method="post" class="update-product">
+                        <label for="product" class="id_label">Product Id:</label>
+                        <input type="text" name="fake" id="fake" disabled/>
+                        <input type="hidden" name="id" id="id__input__update"/>
+    
+                        <label for="product" class="product_label">Product Name:</label>
+                        <input type="text" name="product" id="product__input__update" disabled/>
+    
+                        <div class="image-group">
+                            <div class="upload-image">
+                                <label class="picture" for="picture" tabindex="0">
+                                    <span class="picture__image"></span>
+                                </label>
+                                
+                                <label for="picture" class="custom-file-upload">
+                                    Upload Image
+                                    <input type="file" name="picture" id="picture__input" disabled/>
+                                </label>
+                            </div>
+    
+                            <div class="input-group">
+                                <label for="amount">Amount :</label>
+                                <input type="number" name="amount" id="amount__input__update" />
+                                <label for="unitPrice">Unit price : </label>
+                                <input type="text" name="unitPrice" id="unitPrice__input__update" disabled/>
+    
+                                <label for="group">Product Group: </label>
+                                <select name="group" id="select-input-update" disabled>
+                                    <optgroup label="Bread">
+                                        <option value="Pão branco">Pão branco</option>
+                                        <option value="Pão de forma">Pão de forma</option>
+                                        <option value="Baguette">Baguette</option>
+                                        <option value="Pão Preto">Pão Preto</option>
+                                        <option value="Pão de centeio">Pão de centeio</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <label for="characteristics" class="characteristics-input">Product Characteristics : </label>
+                        <textarea name="characteristics" id="characteristics__input__update" cols="42" rows="10" disabled></textarea>
+    
+                        <button type="submit" class="Updatesubmitbtn">Submit</button>
+                    </form>
+                </div>
+                
+            </section>
+            <main>
+                <table id="product-list" class="sortable">
+                    <tbody>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Categoria</th>
+                            <th>Estoque</th>
+                            <th>Vendas</th>
+                        </tr>
+                        <% Object.keys(collection).forEach((element) => { %>
+                            <tr>
+                                <td><%= collection[element].product %></td>
+                                <td><%= collection[element].unitPrice %></td>
+                                <td><%= collection[element].group %></td>
+                                <td><%= collection[element].amount %></td>
+                                <td><%= collection[element].sell %></td>
+                                <td class="icon_cell">
+                                    <% if (collection[element].amount != 0 || collection[element].amount >= collection[element].sell) { %>
+                                    <a href="/buy/<%= collection[element]._id %>">
+                                        <span title="Buy Product">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
+                                        </span>
+                                    </a>
+                                    <% } %>
+                                </td>
+                                <td class="likeLink icon_cell" onclick="CompleteReadOnlyForm(
+                                    '<%- collection[element]._id %>',
+                                    '<%- collection[element].product %>',
+                                    '<%- collection[element].amount %>',
+                                    '<%- collection[element].unitPrice %>',
+                                    '<%- collection[element].group %>',
+                                    '<%- collection[element].characteristics %>'
+                                )"><span title="Updade Amount" class="add_form">
+                                    <svg width="25" height="30" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>edit_fill [#1480]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-59.000000, -400.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M3,260 L24,260 L24,258.010742 L3,258.010742 L3,260 Z M13.3341,254.032226 L9.3,254.032226 L9.3,249.950269 L19.63095,240 L24,244.115775 L13.3341,254.032226 Z" id="edit_fill-[#1480]"> </path> </g> </g> </g> </g></svg>
+                                </span>
+                                </td>
+                                <td class="icon_cell">
+                                    <% if(collection[element].amount < 1) { %>
+                                    <a href="/delete/<%= collection[element]._id %>"><span title="Delete Product">
+                                        <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" width="30" height="25" xmlns="http://www.w3.org/2000/svg"><path d="m20.015 6.506h-16v14.423c0 .591.448 1.071 1 1.071h14c.552 0 1-.48 1-1.071 0-3.905 0-14.423 0-14.423zm-5.75 2.494c.414 0 .75.336.75.75v8.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-8.5c0-.414.336-.75.75-.75zm-4.5 0c.414 0 .75.336.75.75v8.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-8.5c0-.414.336-.75.75-.75zm-.75-5v-1c0-.535.474-1 1-1h4c.526 0 1 .465 1 1v1h5.254c.412 0 .746.335.746.747s-.334.747-.746.747h-16.507c-.413 0-.747-.335-.747-.747s.334-.747.747-.747zm4.5 0v-.5h-3v.5z" fill-rule="nonzero"/></svg>
+                                    </span></a>
+                                    <% } %>
+                                </td>
+                                </tr>
+                        <% }); %>    
+                    </tbody>
+                </table>
+            </main>
+        </div>
+        <script type="text/javascript" src="js\sorttable .js"></script>
+        <script type="text/javascript" src="\js\javascript.js"></script>
+    </body>
+</html>
